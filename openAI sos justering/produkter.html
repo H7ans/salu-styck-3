@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkter | Premiumkött från Stora Saluhallen | Salu & styck</title>
+    <meta name="description" content="Handla premiumkött online från Stora Saluhallen. Entrecôte, oxfilé, ryggbiff och mer. Hängmörat svenskt kött med leverans nästa dag i Göteborg.">
+    <meta name="keywords" content="köp kött online, entrecôte, oxfilé, ryggbiff, svenska premium kött, stora saluhallen, göteborg leverans">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saluochstyck.se/produkter.html">
+    <meta property="og:title" content="Produkter | Premiumkött från Stora Saluhallen">
+    <meta property="og:description" content="Handla premiumkött online från Stora Saluhallen. Hängmörat svenskt kött med leverans nästa dag.">
+    <meta property="og:image" content="https://saluochstyck.se/kott-webb.webp">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://saluochstyck.se/produkter.html">
+    <meta name="twitter:title" content="Produkter | Premiumkött från Stora Saluhallen">
+    <meta name="twitter:description" content="Handla premiumkött online från Stora Saluhallen.">
+    <meta name="twitter:image" content="https://saluochstyck.se/kott-webb.webp">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="canonical" href="https://saluochstyck.se/produkter.html">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                Salu & styck
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+                <a href="index.html" class="nav-link">Hem</a>
+                <a href="produkter.html" class="nav-link active">Kött</a>
+                <a href="om-oss.html" class="nav-link">Om oss</a>
+                <a href="kontakt.html" class="nav-link">Kontakt</a>
+                <a href="#" class="nav-link" aria-label="Varukorg">
+                    <svg class="cart-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.68 8.32a2 2 0 002 2.68h9.36a2 2 0 002-2.68L17 13M7 13v4a2 2 0 002 2h2a2 2 0 002-2v-4m-6 0h6"></path>
+                    </svg>
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Öppna mobilmeny">
+                <svg id="menu-icon" class="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <svg id="close-icon" class="menu-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link">Hem</a>
+                <a href="produkter.html" class="mobile-nav-link active">Kött</a>
+                <a href="om-oss.html" class="mobile-nav-link">Om oss</a>
+                <a href="kontakt.html" class="mobile-nav-link">Kontakt</a>
+                <a href="#" class="mobile-nav-link" aria-label="Varukorg">
+                    <svg class="mobile-cart-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.68 8.32a2 2 0 002 2.68h9.36a2 2 0 002-2.68L17 13M7 13v4a2 2 0 002 2h2a2 2 0 002-2v-4m-6 0h6"></path>
+                    </svg>
+                    Varukorg
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Våra Produkter</h1>
+            <p class="page-subtitle">Hängmörat svenskt kvalitetskött</p>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="product-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="filter-btn active" onclick="filterProducts('all')">Alla produkter</button>
+                <button class="filter-btn" onclick="filterProducts('premium')">Premium</button>
+                <button class="filter-btn" onclick="filterProducts('klassisk')">Klassisk</button>
+                <button class="filter-btn" onclick="filterProducts('special')">Specialiteter</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-page">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Entrecôte -->
+                <div class="product-card" data-category="premium">
+                    <div class="product-image product-entrecote">
+                        <h4 class="product-image-title">ENTRECÔTE</h4>
+                        <div class="product-badge">Premium</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Entrecôte</h3>
+                        <p class="product-description">Marmorerad entrecôte, hängmörad 21 dagar för intensiv smak och perfekt fettspridning. Perfekt för grillning eller stekning.</p>
+                        <div class="product-details">
+                            <span class="detail">🥩 Hängmörad 21 dagar</span>
+                            <span class="detail">🇸🇪 Svenskt kött</span>
+                            <span class="detail">❄️ Vakuumförpackad</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="price-section">
+                                <span class="product-price">från 312 kr</span>
+                                <span class="price-unit">per 350g</span>
+                            </div>
+                            <button class="product-btn" onclick="addToCart('entrecote', 'Entrecôte')">
+                                Lägg i varukorg
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ryggbiff -->
+                <div class="product-card" data-category="klassisk">
+                    <div class="product-image product-ryggbiff">
+                        <h4 class="product-image-title">RYGGBIFF</h4>
+                        <div class="product-badge">Klassisk</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ryggbiff</h3>
+                        <p class="product-description">Klassisk, saftig ryggbiff i toppklass – handskuren i Stora Saluhallen. Perfekt för vardagslyxen.</p>
+                        <div class="product-details">
+                            <span class="detail">🥩 Handskuren</span>
+                            <span class="detail">🇸🇪 Svenskt kött</span>
+                            <span class="detail">❄️ Vakuumförpackad</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="price-section">
+                                <span class="product-price">från 242 kr</span>
+                                <span class="price-unit">per 350g</span>
+                            </div>
+                            <button class="product-btn" onclick="addToCart('ryggbiff', 'Ryggbiff')">
+                                Lägg i varukorg
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Oxfilé -->
+                <div class="product-card" data-category="premium">
+                    <div class="product-image product-oxfile">
+                        <h4 class="product-image-title">OXFILÉ</h4>
+                        <div class="product-badge">Premium</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Oxfilé</h3>
+                        <p class="product-description">Center-cut oxfilé av högsta kvalitet, mör och elegant för festmiddagen. Det ultimata valet för speciella tillfällen.</p>
+                        <div class="product-details">
+                            <span class="detail">🥩 Center-cut</span>
+                            <span class="detail">🇸🇪 Svenskt kött</span>
+                            <span class="detail">❄️ Vakuumförpackad</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="price-section">
+                                <span class="product-price">från 522 kr</span>
+                                <span class="price-unit">per 350g</span>
+                            </div>
+                            <button class="product-btn" onclick="addToCart('oxfile', 'Oxfilé')">
+                                Lägg i varukorg
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fläskfilé -->
+                <div class="product-card" data-category="klassisk">
+                    <div class="product-image" style="background: #8b5a3c;">
+                        <h4 class="product-image-title">FLÄSKFILÉ</h4>
+                        <div class="product-badge">Klassisk</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Fläskfilé</h3>
+                        <p class="product-description">Mör och saftig fläskfilé från svenska gårdar. Perfekt för snabb tillagning och familjemiddagar.</p>
+                        <div class="product-details">
+                            <span class="detail">🥩 Extra mör</span>
+                            <span class="detail">🇸🇪 Svenskt kött</span>
+                            <span class="detail">❄️ Vakuumförpackad</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="price-section">
+                                <span class="product-price">från 158 kr</span>
+                                <span class="price-unit">per 350g</span>
+                            </div>
+                            <button class="product-btn" onclick="addToCart('flaskfile', 'Fläskfilé')">
+                                Lägg i varukorg
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lammkotletter -->
+                <div class="product-card" data-category="special">
+                    <div class="product-image" style="background: #6b4423;">
+                        <h4 class="product-image-title">LAMMKOTLETTER</h4>
+                        <div class="product-badge">Specialitet</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Lammkotletter</h3>
+                        <p class="product-description">Exklusiva lammkotletter från svenska lamm. Perfekt för gourmetmiddagar med intensiv smak.</p>
+                        <div class="product-details">
+                            <span class="detail">🥩 Gourmet-kvalitet</span>
+                            <span class="detail">🇸🇪 Svenskt lamm</span>
+                            <span class="detail">❄️ Vakuumförpackad</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="price-section">
+                                <span class="product-price">från 333 kr</span>
+                                <span class="price-unit">per 350g</span>
+                            </div>
+                            <button class="product-btn" onclick="addToCart('lammkotletter', 'Lammkotletter')">
+                                Lägg i varukorg
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kött-paket -->
+                <div class="product-card" data-category="special">
+                    <div class="product-image" style="background: #4a5568;">
+                        <h4 class="product-image-title">FAMILJEPAKET</h4>
+                        <div class="product-badge">Specialitet</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Familjepaket</h3>
+                        <p class="product-description">Ett komplett paket med våra mest populära köttstycken. Perfekt för familjen som vill prova olika sorter.</p>
+                        <div class="product-details">
+                            <span class="detail">🥩 Blandade styckdelar</span>
+                            <span class="detail">🇸🇪 Svenskt kött</span>
+                            <span class="detail">❄️ Vakuumförpackad</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="price-section">
+                                <span class="product-price">från 825 kr</span>
+                                <span class="price-unit">ca 1.5 kg</span>
+                            </div>
+                            <button class="product-btn" onclick="addToCart('familjepaket', 'Familjepaket')">
+                                Lägg i varukorg
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Guarantee -->
+    <section class="quality-guarantee">
+        <div class="container">
+            <h2 class="section-title" style="color: #ffffff;">Vår kvalitetsgaranti</h2>
+            <div class="guarantee-grid">
+                <div class="guarantee-item">
+                    <h3 style="color: #ffffff;">Fräschörsgaranti</h3>
+                    <p style="color: #ffffff;">Alla produkter levereras inom 24 timmar från styckning</p>
+                </div>
+                <div class="guarantee-item">
+                    <h3 style="color: #ffffff;">Temperaturgaranti</h3>
+                    <p style="color: #ffffff;">Konstant kylkedja från styckning till leverans</p>
+                </div>
+                <div class="guarantee-item">
+                    <h3 style="color: #ffffff;">Kvalitetsgaranti</h3>
+                    <p style="color: #ffffff;">100% nöjd kund-garanti eller pengarna tillbaka</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobil: Flytande köpknapp -->
+    <div id="mobile-cart-cta" class="mobile-cart-cta" style="display:none;">
+        <button aria-label="Visa varukorg" onclick="saluStyckeApp.toggleCartPanel()">
+            Visa varukorg
+                            <span id="mobile-cart-cta-count" style="margin-left:0.5em;background:#000000;color:#ffffff;border-radius:50%;padding:0.2em 0.7em;font-weight:700;">0</span>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">Hantverksstyckat • Leverans nästa dag • Kort & Klarna</p>
+                <p class="footer-copyright">© 2025 Salu & Styck. Alla rättigheter förbehållna.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Premiumkött från Stora Saluhallen | Salu & styck</title>
+    <meta name="description" content="Kontakta Salu & Styck för frågor om premiumkött från Stora Saluhallen. Telefon: 031-123456. Leverans nästa dag i Göteborg.">
+    <meta name="keywords" content="kontakt, salu styck, stora saluhallen, göteborg, köttleverans, kundservice">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saluochstyck.se/kontakt.html">
+    <meta property="og:title" content="Kontakt | Premiumkött från Stora Saluhallen">
+    <meta property="og:description" content="Kontakta oss för frågor om premiumkött från Stora Saluhallen. Leverans nästa dag i Göteborg.">
+    <meta property="og:image" content="https://saluochstyck.se/kott-webb.webp">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://saluochstyck.se/kontakt.html">
+    <meta name="twitter:title" content="Kontakt | Premiumkött från Stora Saluhallen">
+    <meta name="twitter:description" content="Kontakta oss för frågor om premiumkött från Stora Saluhallen.">
+    <meta name="twitter:image" content="https://saluochstyck.se/kott-webb.webp">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="canonical" href="https://saluochstyck.se/kontakt.html">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                Salu & styck
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+                <a href="index.html" class="nav-link">Hem</a>
+                <a href="produkter.html" class="nav-link">Kött</a>
+                <a href="om-oss.html" class="nav-link">Om oss</a>
+                <a href="kontakt.html" class="nav-link active">Kontakt</a>
+                <a href="#" class="nav-link" aria-label="Varukorg">
+                    <svg class="cart-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.68 8.32a2 2 0 002 2.68h9.36a2 2 0 002-2.68L17 13M7 13v4a2 2 0 002 2h2a2 2 0 002-2v-4m-6 0h6"></path>
+                    </svg>
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Öppna mobilmeny">
+                <svg id="menu-icon" class="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <svg id="close-icon" class="menu-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link">Hem</a>
+                <a href="produkter.html" class="mobile-nav-link">Kött</a>
+                <a href="om-oss.html" class="mobile-nav-link">Om oss</a>
+                <a href="kontakt.html" class="mobile-nav-link active">Kontakt</a>
+                <a href="#" class="mobile-nav-link" aria-label="Varukorg">
+                    <svg class="mobile-cart-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.68 8.32a2 2 0 002 2.68h9.36a2 2 0 002-2.68L17 13M7 13v4a2 2 0 002 2h2a2 2 0 002-2v-4m-6 0h6"></path>
+                    </svg>
+                    Varukorg
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Kontakta oss</h1>
+            <p class="page-subtitle">Vi hjälper dig gärna med dina frågor</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2 style="color: #ffffff;">Skicka ett meddelande</h2>
+                    <form class="contact-form" onsubmit="submitContactForm(event)">
+                        <div class="form-group">
+                            <label for="name">Namn *</label>
+                            <input type="text" id="name" name="name" required aria-label="Namn">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-post *</label>
+                            <input type="email" id="email" name="email" required aria-label="E-post">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone" aria-label="Telefon">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Ämne *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Välj ämne</option>
+                                <option value="order">Beställning</option>
+                                <option value="delivery">Leverans</option>
+                                <option value="quality">Kvalitetsfråga</option>
+                                <option value="general">Allmän fråga</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Meddelande *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Skicka meddelande</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2 style="color: #ffffff;">Kontaktinformation</h2>
+                    
+                    <div class="info-item">
+                        <h3>📞 Telefon</h3>
+                        <p><a href="tel:031123456">031-123 456</a></p>
+                        <p class="info-detail">Vardagar 08:00-17:00</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>📧 E-post</h3>
+                        <p><a href="mailto:info@saluochstyck.se">info@saluochstyck.se</a></p>
+                        <p class="info-detail">Vi svarar inom 24 timmar</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>📍 Adress</h3>
+                        <p>Stora Saluhallen<br>
+                        Kungstorget 2<br>
+                        411 17 Göteborg</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>🚚 Leveransområde</h3>
+                        <p>Göteborg med omnejd</p>
+                        <p class="info-detail">Leverans nästa dag</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>⏰ Beställningstider</h3>
+                        <p>Beställ före 17:00 för leverans nästa dag</p>
+                        <p class="info-detail">Vardagar och helger</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq">
+        <div class="container">
+            <h2 class="section-title" style="color: #ffffff !important;">Vanliga frågor</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Hur lång tid tar leveransen?</h3>
+                    <p>Vi levererar nästa vardag om du beställer före 17:00. Leverans sker mellan 09:00-20:00.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Vad kostar leveransen?</h3>
+                    <p>Fri leverans vid beställningar över 500 kr. Under 500 kr tillkommer 49 kr i leveransavgift.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Kan jag ändra min beställning?</h3>
+                    <p>Ja, kontakta oss senast 17:00 beställningsdagen så justerar vi ordern kostnadsfritt.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Vilka betalningsmetoder accepterar ni?</h3>
+                    <p>Vi accepterar kort (Visa, Mastercard), Swish, Klarna och faktura för företag.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Vad händer om jag inte är hemma?</h3>
+                    <p>Vårt bud ringer 30 min innan leverans. Vi lämnar aldrig kött utanför dörren utan kontakt.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Har ni kvalitetsgaranti?</h3>
+                    <p>Ja, 100% nöjd kund-garanti. Inte nöjd? Kontakta oss så löser vi det direkt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Hitta till oss</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <h3>🗺️ Stora Saluhallen</h3>
+                    <p>Kungstorget 2, 411 17 Göteborg</p>
+                    <p>Mitt i centrala Göteborg</p>
+                    <a href="https://maps.google.com/?q=Stora+Saluhallen+Göteborg" target="_blank" class="map-link">
+                        Öppna i Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">Hantverksstyckat • Leverans nästa dag • Kort & Klarna</p>
+                <p class="footer-copyright">© 2025 Salu & Styck. Alla rättigheter förbehållna.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

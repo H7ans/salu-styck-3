@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salu & styck | Premiumkött från Stora Saluhallen - Leverans i Göteborg</title>
+    <meta name="description" content="Beställ premiumkött från Stora Saluhallen med leverans nästa dag i Göteborg. Hängmörat svenskt kvalitetskött, vakuumförpackat och levererat i kylkedja.">
+    <meta name="keywords" content="premiumkött, stora saluhallen, göteborg, leverans, hängmörat, svenskt kött, entrecôte, oxfilé, ryggbiff">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Salu & Styck">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saluochstyck.se/">
+    <meta property="og:title" content="Salu & styck | Premiumkött från Stora Saluhallen">
+    <meta property="og:description" content="Beställ premiumkött från Stora Saluhallen med leverans nästa dag i Göteborg. Hängmörat svenskt kvalitetskött.">
+    <meta property="og:image" content="https://saluochstyck.se/kott-webb.webp">
+    <meta property="og:site_name" content="Salu & Styck">
+    <meta property="og:locale" content="sv_SE">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://saluochstyck.se/">
+    <meta name="twitter:title" content="Salu & styck | Premiumkött från Stora Saluhallen">
+    <meta name="twitter:description" content="Beställ premiumkött från Stora Saluhallen med leverans nästa dag i Göteborg.">
+    <meta name="twitter:image" content="https://saluochstyck.se/kott-webb.webp">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Salu & Styck",
+        "description": "Premiumkött från Stora Saluhallen med leverans i Göteborg",
+        "url": "https://saluochstyck.se",
+        "telephone": "031-123456",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Göteborg",
+            "addressCountry": "SE"
+        },
+        "openingHours": "Mo-Fr 09:00-17:00",
+        "priceRange": "$$",
+        "servesCuisine": "Kött",
+        "serviceType": "Hemleverans"
+    }
+    </script>
+    
+    <!-- Critical CSS: header, hero, progressbar -->
+    <style>
+    /* Critical CSS start */
+    :root {
+        --primary-color: #1a1a1a;
+        --gradient-primary: #111;
+        --border-radius: 16px;
+        --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    body { margin:0; font-family: 'Inter',sans-serif; background: linear-gradient(135deg, #000000 0%, #111111 100%); color:#ffffff; }
+    .header { background:rgba(0,0,0,0.95);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.2);position:relative;z-index:100;box-shadow:0 8px 32px rgba(255,255,255,0.1); }
+    .header .container { display:flex;justify-content:space-between;align-items:center;padding:1.25rem 1.5rem; }
+    .logo { font-size:1.75rem;font-weight:700;color:#ffffff;text-decoration:none;letter-spacing:-0.02em; }
+    .nav-desktop { display:none;gap:2.5rem; }
+    @media (min-width:768px){ .nav-desktop{display:flex;} .mobile-menu-btn{display:none;} }
+    .nav-link { color:#ffffff;text-decoration:none;font-weight:500;position:relative;padding:0.5rem 0; }
+    .nav-link.active { color:#ffffff;font-weight:600; }
+    .hero { position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:2rem 1rem;background:#1a1a1a; }
+    .hero-bg { position:absolute;top:0;left:0;width:100%;height:100%;z-index:0; }
+    .hero-bg img { width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(0.97) contrast(1.08); }
+    .hero::after { content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,rgba(0,0,0,0.13) 0%,rgba(0,0,0,0.07) 50%,rgba(0,0,0,0.18) 100%);z-index:1; }
+    .hero-content { position:relative;z-index:20;text-align:center;color:#fff;padding:3rem 2rem;max-width:900px; }
+    .hero-title { font-size:clamp(2.5rem,8vw,5rem);font-weight:800;margin-bottom:1.5rem;line-height:1.1;text-shadow:2px 2px 8px rgba(0,0,0,0.7);color:#fff;letter-spacing:-0.02em; }
+    .hero-subtitle { font-size:clamp(1.125rem,4vw,1.5rem);margin-bottom:2.5rem;max-width:600px;margin-left:auto;margin-right:auto;text-shadow:1px 1px 4px rgba(0,0,0,0.7);color:rgba(255,255,255,0.9);line-height:1.6; }
+    .hero-btn[disabled] { pointer-events:none;opacity:0.6; }
+    .free-shipping-progress {max-width:480px;margin:0 auto 1.5rem auto;display:flex;flex-direction:column;align-items:center;}
+    .free-shipping-progress div[style*='background:#ececec'] {width:100%;background:#ececec;border-radius:32px;overflow:hidden;height:14px;}
+    .free-shipping-progress #free-shipping-bar {height:14px;width:0%;background:linear-gradient(90deg,#764ba2,#667eea);transition:width 0.4s;}
+    /* Critical CSS end */
+    </style>
+    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
+    <link rel="canonical" href="https://saluochstyck.se/">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+                Salu & styck
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+                <a href="index.html" class="nav-link">Hem</a>
+                <a href="produkter.html" class="nav-link">Kött</a>
+                <a href="om-oss.html" class="nav-link">Om oss</a>
+                <a href="kontakt.html" class="nav-link">Kontakt</a>
+                <a href="#" class="nav-link" aria-label="Varukorg">
+                    <svg class="cart-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.68 8.32a2 2 0 002 2.68h9.36a2 2 0 002-2.68L17 13M7 13v4a2 2 0 002 2h2a2 2 0 002-2v-4m-6 0h6"></path>
+                    </svg>
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Öppna mobilmeny">
+                <svg id="menu-icon" class="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <svg id="close-icon" class="menu-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link">Hem</a>
+                <a href="produkter.html" class="mobile-nav-link">Kött</a>
+                <a href="om-oss.html" class="mobile-nav-link">Om oss</a>
+                <a href="kontakt.html" class="mobile-nav-link">Kontakt</a>
+                <a href="#" class="mobile-nav-link">
+                    <svg class="mobile-cart-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.68 8.32a2 2 0 002 2.68h9.36a2 2 0 002-2.68L17 13M7 13v4a2 2 0 002 2h2a2 2 0 002-2v-4m-6 0h6"></path>
+                    </svg>
+                    Varukorg
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <picture class="hero-bg">
+            <source media="(min-width: 768px)" srcset="kott-webb.webp">
+            <img src="kott-mobil.webp" alt="Premiumkött från Stora Saluhallen" loading="eager">
+        </picture>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                KÖTTETS BÄSTA SIDA
+            </h1>
+            <p class="hero-subtitle">
+                Premiumkött från Stora Saluhallen – levererat till din dörr i Göteborg.
+            </p>
+            <div class="hero-delivery-promise" style="margin-bottom:1.5rem;">
+                <span style="display:inline-block;background:rgba(255,255,255,0.85);color:#2c3e50;font-weight:600;padding:0.75rem 1.5rem;border-radius:32px;box-shadow:0 2px 8px rgba(0,0,0,0.07);font-size:1.1rem;">
+                    Leverans nästa dag – alltid kylkedja & 100% nöjd kund-garanti
+                </span>
+            </div>
+            <form class="postcode-check" onsubmit="return false;" style="margin-bottom:1.5rem;display:flex;flex-direction:column;align-items:center;gap:0.5rem;">
+                <div style="display:flex;gap:0.5rem;">
+                    <input type="text" id="postcode-input" maxlength="5" pattern="[0-9]{5}" placeholder="Ange postnummer" aria-label="Ange postnummer" style="padding:0.75rem 1rem;border-radius:32px;border:1.5px solid #d1d5db;font-size:1.1rem;outline:none;min-width:120px;" required>
+                    <button type="button" id="postcode-btn" class="postcode-btn" aria-label="Kolla leverans" style="padding:0.75rem 1.5rem;border-radius:32px;background:#ffffff;color:#000000;font-weight:600;border:1.5px solid #d1d5db;font-size:1.1rem;cursor:pointer;">Kolla leverans</button>
+                </div>
+                <div id="postcode-feedback" style="min-height:1.5em;font-size:1rem;color:#e74c3c;"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <!-- HANDLA NU Button - moved from hero for better visibility -->
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <a href="produkter.html" class="hero-btn" id="hero-shop-btn" aria-label="Handla nu" style="background:#ffffff !important;color:#000000 !important;padding:1.25rem 3rem;border:2px solid #ffffff;border-radius:50px;font-weight:600;text-decoration:none;display:inline-block;transition:all 0.3s cubic-bezier(0.4, 0, 0.2, 1);font-size:1.125rem;box-shadow:0 8px 32px rgba(255, 255, 255, 0.3);">
+                    HANDLA NU
+                </a>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature">
+                    <h3 class="feature-title">Från Stora Saluhallen</h3>
+                    <p class="feature-text">Handplockade premiumdetaljer från Göteborgs mest ansedda kötthandel</p>
+                </div>
+                <div class="feature">
+                    <h3 class="feature-title">Beställ idag – leverans imorgon</h3>
+                    <p class="feature-text">Snabb leverans inom Göteborg</p>
+                </div>
+                <div class="feature">
+                    <h3 class="feature-title">Kylkedja i världsklass</h3>
+                    <p class="feature-text">Konstant +2°C från styckning till dörr</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <div class="categories-intro">
+                <p class="categories-text">
+                    Vi levererar exklusivt kött från Stora Saluhallen - Göteborgs mest respekterade kötthandel sedan 1888. Varje styckdel är handplockad av våra experter för att säkerställa högsta kvalitet och smak.
+                </p>
+            </div>
+            <div class="categories-grid">
+                <!-- Köttprodukter -->
+                <div class="category">
+                    <div class="category-image">
+                        <h3 class="category-title">KÖTTPRODUKTER</h3>
+                    </div>
+                    <a href="produkter.html" class="category-btn">
+                        KÖP KÖTT
+                    </a>
+                </div>
+
+                <!-- Om Salu & styck -->
+                <div class="category">
+                    <div class="category-image category-about">
+                        <h3 class="category-title">OM OSS</h3>
+                    </div>
+                    <div class="category-description">Salu & Styck startades i Göteborg med ett mål: att leverera samma premiumdetaljer som serveras över disken i Stora Saluhallen – utan att kunden behöver stå i kö.</div>
+                    <a href="om-oss.html" class="category-btn">
+                        LÄS MER
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Products Section -->
+    <section class="products">
+        <div class="container">
+            <h2 class="products-title">POPULÄRA PRODUKTER</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image product-entrecote">
+                        <h4 class="product-image-title">ENTRECÔTE</h4>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Entrecôte</h3>
+                        <p class="product-description">Marmorerad entrecôte, hängmörad 21 dagar för intensiv smak och perfekt fettspridning.</p>
+                        <div class="product-footer">
+                            <span class="product-price">från 312 kr</span>
+                            <button class="product-btn" onclick="addToCart('entrecote', 'Entrecôte')">
+                                Lägg i varukorg
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image product-ryggbiff">
+                        <h4 class="product-image-title">RYGGBIFF</h4>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ryggbiff</h3>
+                        <p class="product-description">Klassisk, saftig ryggbiff i toppklass – handskuren i Stora Saluhallen.</p>
+                        <div class="product-footer">
+                            <span class="product-price">från 242 kr</span>
+                            <button class="product-btn" onclick="addToCart('ryggbiff', 'Ryggbiff')">
+                                Lägg i varukorg
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image product-oxfile">
+                        <h4 class="product-image-title">OXFILÉ</h4>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Oxfilé</h3>
+                        <p class="product-description">Center-cut oxfilé av högsta kvalitet, mör och elegant för festmiddagen.</p>
+                        <div class="product-footer">
+                            <span class="product-price">från 522 kr</span>
+                            <button class="product-btn" onclick="addToCart('oxfile', 'Oxfilé')">
+                                Lägg i varukorg
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Section -->
+    <section class="quality">
+        <picture class="quality-bg">
+            <source media="(min-width: 768px)" srcset="kott-webb.webp">
+            <img src="kott-mobil.webp" alt="Premiumkött från Stora Saluhallen" loading="lazy">
+        </picture>
+        <div class="container">
+            <div class="quality-content">
+                <h2 class="quality-title">Kylkedja i världsklass</h2>
+                <p class="quality-text">
+                    Ditt kött packas i vakuumpåsar direkt efter styckning och förvaras i konstant +2 °C.
+                </p>
+                <p class="quality-text">
+                    Transporten sker i certifierad kylbil och vi lämnar aldrig en leverans utanför dörren utan kontakt.
+                </p>
+                <p class="quality-text">
+                    Skulle temperaturen överskrida 4 °C får du ny vara eller full återbetalning – utan diskussion.
+                </p>
+                <div class="quality-highlight">
+                    <p class="quality-highlight-text">
+                        Beställ före 17:00 idag – vi levererar redan imorgon med egen kylbil inom Göteborg.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="faq-title-override">Vanliga frågor</h2>
+            <div class="faq-content">
+                <div class="faq-item">
+                    <h3 class="faq-question">Hur levereras köttet?</h3>
+                    <p class="faq-answer">Vi vakuumförpackar varje detalj och transporterar i kylfack (0–4 °C). Budet ringer 30 min innan ankomst.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Vilken tid får jag min leverans?</h3>
+                    <p class="faq-answer">Leverans sker nästa vardag mellan 09:00 och 20:00. Spårningslänk skickas kl. 08:00 leveransdagen.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Kan jag ändra min beställning?</h3>
+                    <p class="faq-answer">Ja. Kontakta oss på 031-123 456 senast 17:00 beställningsdagen så justerar vi ordern kostnadsfritt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">Hantverksstyckat • Leverans nästa dag • Kort & Klarna</p>
+                <p class="footer-copyright">© 2025 Salu & Styck. Alla rättigheter förbehållna.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="container">
+            <div class="cookie-content">
+                <p class="cookie-text">Vi använder kakor för att förbättra din upplevelse och analysera trafik.</p>
+                <div class="cookie-actions">
+                    <button onclick="acceptCookies()" class="cookie-accept">
+                        Godkänn
+                    </button>
+                    <a href="#" class="cookie-policy">Integritetspolicy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
