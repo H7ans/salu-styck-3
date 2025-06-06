@@ -22,6 +22,9 @@ class SaluStyckeApp {
         
         // Initialize app
         this.init();
+        
+        // Setup mobile menu
+        this.setupMobileMenu();
     }
 
     startOptimizedCartSync() {
@@ -469,54 +472,45 @@ class SaluStyckeApp {
         // Preload critical resources
     }
 
-    // Modern Mobile Menu with Animations
+    // Förbättrad menyhantering
     toggleMobileMenu() {
         const mobileMenu = document.getElementById('mobile-menu');
         const menuIcon = document.getElementById('menu-icon');
         const closeIcon = document.getElementById('close-icon');
         
         if (!mobileMenu || !menuIcon || !closeIcon) return;
-
-        const isHidden = mobileMenu.classList.contains('hidden');
         
-        if (isHidden) {
-            // Open menu
+        const isMenuHidden = mobileMenu.classList.contains('hidden');
+        
+        if (isMenuHidden) {
+            // Öppna menyn
             mobileMenu.classList.remove('hidden');
-            menuIcon.classList.add('hidden');
-            closeIcon.classList.remove('hidden');
-            
-            // Animate menu items
-            const menuItems = mobileMenu.querySelectorAll('.mobile-nav-link');
-            menuItems.forEach((item, index) => {
-                item.style.transform = 'translateX(-100%)';
-                item.style.opacity = '0';
-                
-                setTimeout(() => {
-                    item.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
-                    item.style.transform = 'translateX(0)';
-                    item.style.opacity = '1';
-                }, index * 50);
+            requestAnimationFrame(() => {
+                mobileMenu.classList.add('visible');
+                menuIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
             });
-            
-            // Lock body scroll
-            document.body.style.overflow = 'hidden';
         } else {
-            // Close menu
-            const menuItems = mobileMenu.querySelectorAll('.mobile-nav-link');
-            menuItems.forEach((item, index) => {
-                setTimeout(() => {
-                    item.style.transform = 'translateX(-100%)';
-                    item.style.opacity = '0';
-                }, index * 30);
-            });
-            
-            setTimeout(() => {
-                mobileMenu.classList.add('hidden');
-                menuIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
-                document.body.style.overflow = '';
-            }, menuItems.length * 30 + 100);
+            this.closeMobileMenu();
         }
+    }
+
+    closeMobileMenu() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+        
+        if (!mobileMenu || !menuIcon || !closeIcon) return;
+        
+        mobileMenu.classList.remove('visible');
+        menuIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+        document.body.style.overflow = '';
+        
+        setTimeout(() => {
+            mobileMenu.classList.add('hidden');
+        }, 300);
     }
 
     // Advanced Shopping Cart System
@@ -1403,7 +1397,7 @@ class SaluStyckeApp {
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                             <rect x="1" y="3" width="15" height="13"></rect>
                             <path d="m16,8l2,-2 2,2"></path>
-                            <path d="m18,6v8a2,2 0 0,1 -2,2H4a2,2 0 0,1 -2,-2V6"></path>
+                            <path d="m18,6v8a2 2 0 0,1 -2,2H4a2 2 0 0,1 -2,-2V6"></path>
                         </svg>
                         Slutför köp
                     </h3>
